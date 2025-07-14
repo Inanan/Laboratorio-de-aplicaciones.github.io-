@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    font-family:Comic Sans MS;
+    color: yellow;
+    background-color: brown;
+}
+.Len {
+    display: block;
+  margin: auto;
+  width: 50%;
+  animation-name: movimiento-loco2;
+    animation-duration: 1100ms;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+h1 {
+    position: relative;
+    animation-duration: 350ms;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: movimiento-loco;
+   
+}
+ @-webkit-keyframes movimiento-loco{
+        from{
+            left:-50px;
+        }
+        to{
+            left:50px;
+        }
+        }
+        
+@-webkit-keyframes movimiento-loco2{
+    0%{
+        top:0px; left: 600px; 
+        -webkit-transform: rotate(0deg);}
+    50%{
+        top: 130px; left: 200px;
+        -webkit-transform: rotate(180deg);
+    }
+    100%{
+        top: 400%; left: 600px;
+        -webkit-transform: rotate(360deg);
+    }
+    }
+}
+        }
